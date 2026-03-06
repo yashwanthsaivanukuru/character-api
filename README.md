@@ -24,4 +24,4 @@ This API manages a collection of characters from the Harry Potter universe, stor
 * `GET /api/characters/search?name=substring` - Searches for characters by a partial name.
 
 ## Demo Video
-**OneDrive Link:** (https://uncg-my.sharepoint.com/:v:/g/personal/y_vanukuru_uncg_edu/IQCsuITalDzkRI2YOjK3eewFAeoifR3DDq-7hWD9BDNbZ5Q?e=bKsXMe)
+**OneDrive Link:** https://uncg-my.sharepoint.com/:v:/g/personal/y_vanukuru_uncg_edu/IQCsulTaIDzkRI2YOjK3eewFAeoifR3DDq-7hWD9BDNbZ5Q?e=burnwi
