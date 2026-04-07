@@ -1,0 +1,154 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+nav {
+    background: #2c3e50;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #3498db;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* --- NEW: Gallery Grid Styling --- */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;       /* Allows cards to wrap to the next line */
+    justify-content: center;
+    gap: 30px;            /* Space between cards */
+    padding: 20px;
+}
+
+/* --- NEW: Individual Character Card Styling --- */
+.character-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;         /* Fixed width for cards */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid #ddd;
+}
+
+.character-card:hover {
+    transform: translateY(-10px); /* Lifts the card on hover */
+}
+
+.character-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;    /* Prevents stretching/squeezing */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.character-card h3 {
+    margin: 10px 0;
+    color: #2c3e50;
+}
+
+.card-actions {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.card-actions a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+/* --- Form Container (Kept from original) --- */
+form {
+    background: #ffffff;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="number"],
+input[type="url"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Submit Button */
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #219150;
+}
+
+/* Search Bar (Optional) */
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    width: 50%;
+    min-width: 250px;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+    .character-card {
+        width: 100%; /* Full width on tiny screens */
+    }
+}
